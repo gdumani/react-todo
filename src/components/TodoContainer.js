@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default */
 import React, { Component } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import TodosList from './TodosList';
@@ -5,7 +6,9 @@ import Header from './Header';
 import InputTodo from './InputTodo';
 
 export class TodoContainer extends Component {
-    state = {
+  constructor(props) {
+    super(props);
+    this.state = {
       todos: [
         {
           id: uuidv4(),
@@ -24,6 +27,7 @@ export class TodoContainer extends Component {
         },
       ],
     };
+  }
 
     handleChange = (id) => {
       this.setState((prevState) => ({
@@ -37,26 +41,30 @@ export class TodoContainer extends Component {
     };
 
     delTodo = (id) => {
+      const { todos } = this.state;
       this.setState({
         todos: [
-          ...this.state.todos.filter((todo) => todo.id !== id),
+          ...todos.filter((todo) => todo.id !== id),
         ],
       });
     };
 
     addTodoItem = (title) => {
+      const { todos } = this.state;
       const newTodo = {
         id: uuidv4(),
         title,
         completed: false,
       };
-      this.setState({ todos: [...this.state.todos, newTodo] });
+      this.setState({ todos: [...todos, newTodo] });
     };
 
     setUpdate = (updatedTitle, id) => {
+      const { todos } = this.state;
       this.setState({
-        todos: this.state.todos.map((todo) => {
+        todos: todos.map((todo) => {
           if (todo.id === id) {
+            // eslint-disable-next-line no-param-reassign
             todo.title = updatedTitle;
           }
           return todo;
@@ -65,13 +73,14 @@ export class TodoContainer extends Component {
     };
 
     render() {
+      const { todos } = this.state;
       return (
         <div className="container">
           <div className="inner">
             <Header />
             <InputTodo addTodoProps={this.addTodoItem} />
             <TodosList
-              todos={this.state.todos}
+              todos={todos}
               handleChangeProps={this.handleChange}
               deleteTodoProps={this.delTodo}
               setUpdate={this.setUpdate}

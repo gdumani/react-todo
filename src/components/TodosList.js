@@ -1,17 +1,23 @@
+/* eslint-disable import/no-named-as-default */
+/* eslint-disable react/prefer-stateless-function */
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import TodoItem from './TodoItem';
 
 export class TodosList extends Component {
   render() {
+    const {
+      todos, handleChangeProps, deleteTodoProps, setUpdate,
+    } = this.props;
     return (
       <ul>
-        {this.props.todos.map((todo) => (
+        {todos.map((todo) => (
           <TodoItem
             key={todo.id}
             todo={todo}
-            handleChangeProps={this.props.handleChangeProps}
-            deleteTodoProps={this.props.deleteTodoProps}
-            setUpdate={this.props.setUpdate}
+            handleChangeProps={handleChangeProps}
+            deleteTodoProps={deleteTodoProps}
+            setUpdate={setUpdate}
           />
         ))}
       </ul>

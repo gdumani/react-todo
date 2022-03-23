@@ -1,8 +1,12 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import './TodoItem.module.css';
 
 export class TodoItem extends Component {
-  state = { editing: false }
+  constructor(props) {
+    super(props);
+    this.state = { editing: false };
+  }
 
   handleEditing = () => {
     this.setState({ editing: true });
@@ -21,12 +25,16 @@ export class TodoItem extends Component {
       opacity: 0.4,
       textDecoration: 'line-through',
     };
-    const { completed, id, title } = this.props.todo;
+    const {
+      todo, handleChangeProps, deleteTodoProps, setUpdate,
+    } = this.props;
+    const { completed, id, title } = todo;
+    const { editing } = this.state;
 
     const viewMode = {};
     const editMode = {};
 
-    if (this.state.editing) {
+    if (editing) {
       viewMode.display = 'none';
     } else {
       editMode.display = 'none';
@@ -39,9 +47,9 @@ export class TodoItem extends Component {
             type="checkbox"
             className="checkbox"
             checked={completed}
-            onChange={() => this.props.handleChangeProps(id)}
+            onChange={() => handleChangeProps(id)}
           />
-          <button onClick={() => this.props.deleteTodoProps(id)}>
+          <button type="button" onClick={() => deleteTodoProps(id)}>
             Delete
           </button>
           <span style={completed ? completedStyle : null}>
@@ -52,7 +60,7 @@ export class TodoItem extends Component {
           type="text"
           style={editMode}
           className="textInput"
-          onChange={(e) => { this.props.setUpdate(e.target.value, id); }}
+          onChange={(e) => { setUpdate(e.target.value, id); }}
           onKeyDown={this.handleUdatedDone}
         />
       </li>
