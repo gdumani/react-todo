@@ -4,7 +4,7 @@
 import React, { Component } from 'react';
 import TodoItem from './TodoItem';
 
-export class TodosList extends Component {
+class TodosList extends Component {
   render() {
     const {
       todos, handleChangeProps, deleteTodoProps, setUpdate,

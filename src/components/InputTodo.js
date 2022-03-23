@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 
-export class InputTodo extends Component {
+class InputTodo extends Component {
   constructor(props) {
     super(props);
     this.state = {

@@ -1,11 +1,10 @@
-/* eslint-disable import/no-named-as-default */
 import React, { Component } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import TodosList from './TodosList';
 import Header from './Header';
 import InputTodo from './InputTodo';
 
-export class TodoContainer extends Component {
+export default class TodoContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -90,5 +89,3 @@ export class TodoContainer extends Component {
       );
     }
 }
-
-export default TodoContainer;
