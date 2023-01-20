@@ -1,74 +1,130 @@
-# Using React to create a  Todo App
-This project follows the Ibaslogic.com React tutorial on how to create an appliction with this tool
+<a name="readme-top"></a>
+
+<div align="center">
+
+  <h3><b>Microverse README Template</b></h3>
+
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 [react-todo] <a name="about-project"></a>
+
+**[react-todo]** This project follows the Ibaslogic.com React tutorial on how to create an appliction with this tool
 
 ## Screenshot
 
 ![screenshot](./app-screenshot.png)
 
 
-
-## Requirements: 
+## 🛠 Built With <a name="built-with"></a>
   NodeJs
   Npm
   Babel
   React
 
-## Installation 
-  Install the appropiate versions of Node and Npm for you OS
+### Tech Stack <a name="tech-stack"></a>
 
-  Clone the repository:
-  
-  `git clone https://github.com/gdumani/react-todo.git`
+The app was developed using React js, JavaScript and CSS
 
-  got to that directory and checkout to the feattutorial branch and install with Npm.
-
-  `cd react-todo`
-
-  `git checkout feat/setup`
-
-  `git pull`
-
-  `npm install`
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
 
 
-## Available Scripts
+<!-- Features -->
 
-In the project directory, you can run:
+### Key Features <a name="key-features"></a>
 
- `npm start`
+> Describe between 1-3 key features of the application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **[Add To dos items to the list]**
+- **[Mark To dos items as completed]**
+- **[Delete To dos items]**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-`npm test`
+<!-- LIVE DEMO -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Live Demo <a name="live-demo"></a>
 
- `npm run build`
+> Add a link to your deployed project.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Live Demo Link](https://yourdeployedapplicationlink.com) Not yet available
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- GETTING STARTED -->
 
- `npm run eject`
+## 💻 Getting Started <a name="getting-started"></a>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To get a local copy up and running, follow these steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+In order to run this project you need to have installed Nodejs
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Setup
 
-## Authors
+Clone this repository to your desired folder:
+
+```sh
+  cd my-folder
+  git clone https://github.com/gdumani/react-todo.git
+```
+
+### Install
+
+Install this project with:
+
+```sh
+  cd react-todo
+  git checkout feat/setup
+  git pull
+  npm install
+
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  npm start
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Author <a name="authors"></a>
 
 **Giancarlo Dumani**
 
@@ -76,22 +132,35 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - Twitter: [@gdumani1](https://twitter.com/gdumani1)
 - LinkedIn: [ Giancarlo-Dumani](https://www.linkedin.com/in/gdumani/?originalSubdomain=cr)
 
-## 🤝 Contributing
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Describe 1 - 3 features you will add to the project.
+
+- [ ] **[Add style to the navbar]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
 
-Give a ⭐️ if you like this project!
 
-## Acknowledgments
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+<!-- LICENSE -->
 
-## 📝 License
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
